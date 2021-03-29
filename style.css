@@ -1,0 +1,356 @@
+*{
+    box-sizing: border-box;
+    transition: 1s ease all;
+}
+
+/* font-family: 'Overpass', sans-serif; weights: 300 600
+    font-family: 'Ubuntu', sans-serif; */
+
+body{
+    font-size: 16px;
+    width: 100%;
+}
+
+header{
+    background: url("images/bg-pattern-intro.svg"), linear-gradient(to left, hsl(353, 100%, 62%), hsl(13, 100%, 72%));
+
+    background-repeat: no-repeat;
+    background-position: 25% 50%;
+
+    border-bottom-left-radius: 125px;
+
+    font-family: 'Ubuntu', sans-serif;
+
+    width: 100%;
+    height: 600px;
+
+    padding: 50px 200px 100px 90px;
+}
+
+footer{
+    background-color: hsl(240, 10%, 16%);
+    color: white;
+
+    border-top-right-radius: 125px;
+
+    height: 400px;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer h3{
+    margin: 0;
+    padding: 0;
+    margin-top: 45px;
+}
+
+.footer-links{
+    display: flex;
+    flex-direction: column;
+    
+    line-height: 50px;
+
+    height: 80%;
+
+    margin: auto 0;
+}
+
+.footer-links a:link:first-of-type{
+    font-size: 2rem;
+}
+
+.footer-links a:link, .footer-links a:visited, .footer-links a:hover, .footer-links a:active{
+
+    color: white;
+    text-decoration: none;
+    
+}
+
+.footer-links a:hover{
+    text-decoration: underline;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1, h2, h3, h4{
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+h4, h3{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+h3{
+    text-align: center;
+    margin-top: 30px;
+}
+
+button{
+    border: none;
+    font-weight: 600;
+    padding: 20px 15px 15px 15px;
+    border-radius: 30px;
+    cursor:pointer;
+}
+
+nav a:link{
+
+    color: white;
+    text-decoration: none;
+
+}
+
+nav a:visited{
+    color:white;
+}
+
+nav a:hover{
+
+    color:white;
+    text-decoration: underline;
+
+}
+
+nav a:active{
+    color: white;
+}
+
+
+/* CLASSES */
+
+.brand-name{
+    
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-basis: 50%;
+}
+
+.login-signup{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 30vw;
+}
+
+.login-link{
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.arrow-up{
+    transform: rotate(180deg);
+}
+
+.sign-up-link a:link{
+    background-color:white;
+    border-radius: 30px;
+    color: hsl(356, 100%, 66%);
+
+    padding: 15px 30px;
+}
+
+.sign-up-link a:visited{
+    color: hsl(356, 100%, 66%);
+}
+
+.sign-up-link a:hover{
+    background-color: hsl(355, 100%, 74%);
+    color: white;
+}
+
+.sign-up-link a:active{
+    color: hsl(356, 100%, 66%);
+}
+
+.drop-down-box{
+    position: absolute;
+    background-color: white;
+
+    box-shadow: 0px 5px 30px -15px black;
+
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+
+    width: 150px;
+
+    line-height: 30px;
+
+    padding: 20px;
+    margin: 10px 0px 0px -10px;
+    border-radius: 5px;
+}
+
+.drop-down-box a:link{
+    color: hsl(208, 49%, 24%);
+    transition: 0.2s ease all;
+}
+
+.drop-down-box a:visited{
+    color: hsl(208, 49%, 24%);
+}
+
+.drop-down-box a:hover{
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.drop-down-box a:active{
+    color: hsl(208, 49%, 24%);
+}
+
+.display-flex{
+    display: flex;
+}
+
+.shiny{
+    font-size: 1.25rem;
+    text-shadow: 0.25px 0.25px 0.25px orangered;
+}
+
+.title-content{
+    margin: 140px auto;
+    width: auto;
+    height: 200px;
+
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    font-family: 'Overpass', sans-serif;
+}
+
+.title-buttons{
+    display: flex;
+    justify-content: space-between;
+
+    width: 270px;
+}
+
+#start-for-free{
+    color: hsl(356, 100%, 66%);
+}
+
+#start-for-free:hover{
+    color: white;
+    background-color: hsl(355, 100%, 74%);
+}
+
+#learn-more{
+    background: none;
+    border: 1px solid white;
+    color: white;
+}
+
+#learn-more:hover{
+
+    background-color: hsl(355, 100%, 74%);
+
+}
+
+/* MAIN CONTENT */
+
+.section1{
+    padding: 30px;
+    color:hsl(208, 49%, 24%);
+}
+
+.section1-content{
+    display: flex;
+    height: 500px;
+}
+
+.section1-left-side{
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    padding: 80px;
+
+    line-height: 25px;
+
+}
+
+.image1{
+    width: 40%;
+    margin-top: -80px;
+    position: absolute;
+    right: -100px;
+}
+
+/* SECTION2 */
+
+.section2{
+    background: url("images/bg-pattern-circles.svg");
+    background-size: 50%;
+    background-position: top -50vh left -10vh ;
+    background-color: hsl(237, 17%, 21%);
+    background-repeat:no-repeat;
+
+    height: 300px;
+
+    display: flex;
+
+    border-radius: 100px 0 100px 0;
+}
+
+#image2{
+    height: 150%;
+    margin-left: 200px;
+}
+
+.section2-right-side{
+    color: white;
+    padding-right: 300px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    height: 80%;
+    line-height: 25px;
+}
+
+/* SECTION 3 STUFF */
+
+.section3{
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+}
+
+#image3{
+    width: 70%;
+    margin-left: -280px;
+}
+
+.section3-right-side{
+    padding: 150px;
+    line-height: 25px;
+
+    color: hsl(208, 49%, 24%);
+}
